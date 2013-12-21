@@ -1,0 +1,16 @@
+{
+  "name": "fruitsnveg",
+  "version": "0.0.2",
+  "dependencies": {
+    "jquery": "2.0.3",
+    "angular": "~1.2.4",
+    "angular-route": "~1.2.4",
+    "angular-resource": "~1.2.4",
+    "angular-cookies": "~1.2.4",
+    "angular-mocks": "~1.2.4",
+    "angular-sanitize": "~1.2.4",
+    "underscore": "~1.5.2",
+    "fastclick": "latest",
+    "angular-animate": "~1.2.6"
+  }
+}
