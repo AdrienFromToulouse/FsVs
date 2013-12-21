@@ -1,0 +1,182 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/sprites/sprite-img";
+
+
+/* @import "../images/ui/\*.png"; */
+
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+* {
+  @include box-sizing(border-box);
+  *behavior: url(../js/libs/boxsizing.htc);
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk-condensed';
+  src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Medium-Condensed.ttf');
+}
+@font-face {
+  font-family: 'merriam';
+  src: url('../fonts/merriam.woff');
+}
+
+
+body {
+  background: #1a1a1a; 
+}
+.global {
+  /* margin: -8px; */
+}
+
+
+
+.reveal-animation.ng-enter {
+  @include single-transition (all, 2s, linear);
+  opacity: 0;
+}
+.reveal-animation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+
+
+.bgrd-txt-cardboard {
+  color: #cd3a3d;
+  letter-spacing: normal;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(../images/cardboard--full.jpg);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}
+.bgrd-txt-paper {
+  color: #cd3a3d;
+  letter-spacing: normal;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(../images/paper--full.jpg);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}
+.bgrd-txt-red {
+  color: #cd3a3d;
+  letter-spacing: normal;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(../images/red--full.jpg);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+  /* font-family: akzidenz-grotesk-condensed, 'Arial Narrow', Impact, serif; */
+  /* color: #cd3a3d; */
+
+}
+
+p {
+  font-family: merriam;
+}
+
+.center {
+  text-align: center;
+}
+.light {
+  background: #f9f9f9;
+}
+.darker {
+  background: #f0f0f0; 
+}
+
+
+.main-hdr-nav {
+
+  line-height: 111px;
+  height: 111px;
+  width: 100%;
+  padding-left: 6.5%;
+  @include single-transition (all, .3s, ease);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  font-family: akzidenz-grotesk-condensed, 'Arial Narrow', Impact, serif;
+  font-weight: normal;
+  letter-spacing: normal;
+
+  i {
+    /* @include ui-sprites(logo-menu); */
+  }
+  nav {
+    position: absolute;
+    left: 15%;
+  }
+  li {
+    display: inline-block;
+    list-style: none;
+    a {
+      font-size: 2em;
+      text-decoration: none;
+      padding: 5px 17px;
+    }
+  }
+}
+
+.home {
+  .hdr-image-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 718px;
+    overflow: hidden;
+    z-index: 0;
+    @include single-transition (left, .7s, ease);
+    .hdr-image {
+      position: relative;
+    }
+    .hdr-grp {
+      font-family: 'Permanent Marker', cursive;
+    }
+  }
+  /* .empty { */
+  /*   height: 718px; */
+  /* } */
+  .hdr-content {
+    position: fixed;
+    top:45%;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    h1 {
+      font-size: 5em;
+    }
+  }
+  .main {
+    position: relative;
+    background: #ffffff;
+    z-index: 5;
+    overflow: hidden;
+    .content-cell {
+      float: left;
+      overflow: hidden;
+      margin: 0.3%;
+      padding: 3%;
+      line-height: 1.4;
+    }
+    .cell-type1 {
+      width: 32.7%;
+    }
+    .cell-type2 {
+      width: 66%;
+    }
+    .listen {
+      background: #1a1a1a;
+      padding: 66px 9.2% 58px 4.2%;
+      color: #ffffff;
+    }
+  }
+}

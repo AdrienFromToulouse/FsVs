@@ -1,0 +1,118 @@
+@import "compass/css3";
+
+
+@font-face {
+  font-family: 'akzidenz-grotesk-condensed';
+  src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Medium-Condensed.ttf');
+}
+@font-face {
+  font-family: 'merriam';
+  src: url('../fonts/merriam.woff');
+}
+
+/* GLOBAL SITE STYLE
+-------------------------------------------------- */
+
+/* #global { */
+/*   width: 960px; */
+/*   margin-left: auto; */
+/*   margin-right: auto; */
+/* } */
+
+body {
+  /* color: #5a5a5a; */
+  background-color: #000000;
+  /* font-family: 'Noto Sans', sans-serif; */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+  font-family: akzidenz-grotesk-condensed, 'Arial Narrow', Impact, serif;
+  color: #cd3a3d;
+  font-size: 56px;
+  font-weight: normal;
+  letter-spacing: normal;
+
+
+
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(../images/red--full.jpg);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+
+
+}
+
+p {
+  font-family: merriam;
+
+}
+
+/* section { */
+/*   margin-top: 100px; */
+/* } */
+
+.center {
+  text-align: center;
+}
+
+/* footer { */
+/*   background-color: #2e2e2e; */
+/*   color: #ededed; */
+/*   padding-bottom: 40px; */
+/*   a { */
+/*     color: #ededed; */
+/*   } */
+/*   p.copyright { */
+/*     text-align: center; */
+/*     color: #888; */
+/*     padding-top: 2em; */
+/*   } */
+/* } */
+
+/* .carousel-indicators { */
+/*   @media (max-width: 768px) { */
+/*     bottom: 80px; */
+/*   } */
+/* } */
+
+/* HOME
+-------------------------------------------------- */
+
+
+.home {
+  /* .banner-panel { */
+  /*   width: 100%; */
+
+  /*   div { */
+  /*     display: inline-block; */
+
+  /*   } */
+
+  /*   section { */
+  /*     width: 33%; */
+  /*     height: 640px; */
+  /*     display: inline-block; */
+  /*   } */
+
+  /*   .banner-vid { */
+  /*     width: 33%; */
+  /*     overflow: hidden; */
+  /*     video: { */
+  /*       width: 100%; */
+  /*     } */
+  /*   } */
+
+  /*   .banner-pic { */
+  /*     opacity: 0.65; */
+  /*     @include background(image-url("../images/front_1.jpg")); */
+  /*     @include single-transition (opacity, 360ms, ease); */
+  /*     cursor: pointer; */
+  /*   } */
+
+  /*   section:hover { */
+  /*     opacity: 1; */
+  /*   } */
+  /* } */
+}
