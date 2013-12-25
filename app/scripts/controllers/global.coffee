@@ -8,7 +8,6 @@ angular.module('fruitsandvegApp')
     scrollReset = ->
                 
       $targetBlock = $(".main")
-      console.log $targetBlock
       $headerHeight = $(".main-hdr-nav").height()
       $("html, body").animate
         scrollTop: -$($targetBlock).offset().top - $headerHeight + 1

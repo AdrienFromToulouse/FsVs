@@ -1,50 +1,84 @@
 <div class="home" ng-controller="MainCtrl">
   
   <div class="hdr-image-wrap"> 
-    <img class="hdr-image" src="../images/cover.jpg" alt="" />
+
+    <div class="video hdr-image">
+      <video width="100%" height="1000" autoplay="true" loop="true" muted="true">
+        <source src="/videos/intro.mp4" type="video/mp4" />
+        <!-- <source src="/media/stage1.ogv"  type="video/ogg" /> -->
+      </video>
+    </div>
+
+
+    <!-- <img class="hdr-image" src="../images/cover.jpg" alt="" /> -->
+
+
     <div class="hdr-content">
-      <h1 class="bgrd-txt-paper hdr-grp">FRUITS AND VEGGIES</h1>
+      <!-- <h1 class="bgrd-txt-paper hdr-grp">FRUITS AND VEGGIES</h1> -->
     </div>
   </div>
   <div class="empty"></div>
   <div class="main" id="main">
     <div class="listen">
-      <h2>LISTEN TO THIS</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+      <div class="logo"></div>
+      <div class="sharing">
+        <span class="icon icon-facebook"></span>
+        <span class="icon icon-twitter"></span>
+        <span class="icon icon-google-plus"></span>
+      </div>
     </div>
     <div class="content">
       <!-- <img src="http://placehold.it/300x300/" alt="" /> -->
       <div class="content-cell cell-type1">
-        <h2>Cell 1</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <img src="../images/front_1_cut.jpg" alt="" />
       </div>
       <div class="content-cell cell-type1 light">
-        <h2>Cell 2</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h2>The emergence<br>in Durban</h2>
+        <p>Fruits and Veggies, Durban's pre-emiment gypsy ska trouble-makers emerged from the gutters of Umbilo in 2008 and have since earned themselves a reputation as one of the most refreshing and powerful live acts in the country.</p>
       </div>
       <div class="content-cell cell-type1 darker">
-        <h2>Cell 3</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h2>The band's<br>members</h2>
+        <p>Lead singer Purity’s powerful and wild vocals are backed by a band full of raw guts and balls; comprising guitarist Jimbo, bassist Loopy, drummer Justin and guitarist Cameron.</p>
+      </div>
+      <div class="content-cell cell-type1 black">
+        <h2 class="bgrd-txt-cardboard">Mahala <br>called them</h2>
+        <p class="white-txt">“a one of a kind band, solid songs, a derisive attitude towards conventions, a blistering stage presence and a really deep commitment to living life to the full. The most exciting post-racial, post-punk party band to come out of Durban since, uh, forever!”</p>
+      </div>
+      <div class="content-cell cell-type2 light">
+        <div id="videos_feed">
+          <div class="three-columns">
+            <div class="column">
+              <iframe id="vid1" width="222" src="" frameborder="0" allowfullscreen=""></iframe>
+              <p class="videsc"></p>
+            </div>
+            <div class="column">
+              <iframe id="vid2" width="222" src="" frameborder="0" allowfullscreen=""></iframe>
+              <p class="videsc"></p>
+            </div>
+            <div class="column">
+              <iframe id="vid3" width="222" src="" frameborder="0" allowfullscreen=""></iframe>
+              <p class="videsc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-cell cell-type1 darker">
+        <h2>Reviewing their<br>Splashy Fen set</h2>
+        <p>Lloyd Gedye wrote in the Mail and Guardian: “the most impressive of the bands was Fruits and Veggies... teenage rebellion Durban style, with some great catchy hooks and some fierce attitude.”</p>
       </div>
       <div class="content-cell cell-type1">
-        <h2>Cell 4</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="content-cell cell-type2 darker">
-        <h2>Cell 5</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="content-cell cell-type1">
-        <h2>Cell 1</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <img src="../images/front_2_cut.jpg" alt="" />
       </div>
       <div class="content-cell cell-type1 light">
-        <h2>Cell 2</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h2>Fruits and Veggies<br>have an EP</h2>
+        <p>“Ndaa” under their belt , they have recently been the subject of a Rolling Stone feature and have just finished the demo process of their first full length album at Sonic Studios with Colin Peddie.</p>
       </div>
-      <div class="content-cell cell-type1 darker">
-        <h2>Cell 3</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <div class="content-cell cell-type2 black">
+        <h2 class="bgrd-txt-cardboard">Levi's Music Mag<br>called them</h2>
+        <p class="white-txt">“pure genre-breaking liberation” and wrote: "Fruit and Veg are skanky, Fruit and Veg are free-range... with ska elements in a mix of punk and funk. Fruit and Veg are a band for a big stage. They are loose without being loose, tight without being uptight".</p>
+      </div>
+      <div class="content-cell cell-type1">
+        <img src="../images/front_3.jpg" alt="" />
       </div>
     </div>
   </div>

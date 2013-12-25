@@ -11,6 +11,7 @@
     "angular-sanitize": "~1.2.4",
     "underscore": "~1.5.2",
     "fastclick": "latest",
-    "angular-animate": "~1.2.6"
+    "angular-animate": "~1.2.6",
+    "jquery.dotdotdot": "~1.6.10"
   }
 }
