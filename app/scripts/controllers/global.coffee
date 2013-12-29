@@ -25,3 +25,12 @@ angular.module('fruitsandvegApp')
         when "http://fruitsveggies.ntdotme.com/#/program"
           (new Image()).src = 'images/cover-prog.jpg'
         else
+
+  
+    $scope.getClass = (path) ->
+      console.log $location.path()
+      if $location.path() is path
+        
+        "active"
+      else
+        ""

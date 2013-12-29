@@ -5,7 +5,7 @@ angular.module('fruitsandvegApp',
     'ngResource',
     'ngSanitize',
     'ngCookies',
-    'ngAnimate'
+    'ngAnimate',
   ])
   .config ($routeProvider, $locationProvider) ->
     $routeProvider
@@ -14,6 +14,12 @@ angular.module('fruitsandvegApp',
         controller: 'MainCtrl'
       .when '/program',
         templateUrl: 'views/program.html'
+        controller: 'MainCtrl'
+      .when '/gallery',
+        templateUrl: 'views/gallery.html'
+        controller: 'MainCtrl'
+      .when '/records',
+        templateUrl: 'views/records.html'
         controller: 'MainCtrl'
       .otherwise
         redirectTo: '/'
