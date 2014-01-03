@@ -4,7 +4,7 @@ angular.module('fruitsandvegApp')
   .controller 'HeaderMenuBarCtrl', ($scope, $timeout) ->
 
     $scope.unroll = ->
-      if $("mob-menu-icon").css("display") is "block"
+      if $(".mob-menu-icon").css("display") is "block"
         $hdr = $(".main-hdr-nav")
         if $hdr.hasClass("opened")
           $hdr.removeClass "opened"
