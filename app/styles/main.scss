@@ -91,13 +91,16 @@ body {
   opacity: 1;
 }
 
-.bgrd-txt-cardboard {
-  color: #ac9566;;
+.backgroundclip .bgrd-txt-cardboard {
+  /* color: #ac9566;; */
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: url(../images/cardboard--full.jpg);
   @include background-clip(text);
   /* -webkit-background-clip: text; */
+}
+.bgrd-txt-cardboard {
+  color: #ac9566;;
 }
 .bgrd-txt-paper {
   color: #ffffff;
@@ -195,8 +198,8 @@ a {
 }
 
 .main-hdr-nav {
-  line-height: 95px;
-  height: 58px;
+  line-height: 111px;
+  height: 111px;
   width: 100%;
   padding-left: 6.5%;
   @include transition (all .3s ease);
@@ -208,8 +211,8 @@ a {
   font-weight: normal;
   letter-spacing: normal;
   @media screen and (max-width: $break-medsmall) {
-    /* height: 58px; */
-    /* line-height: 58px; */
+    line-height: 95px;
+    height: 58px;
   }
   .mob-menu-icon {
     @media screen and (max-width: $break-medsmall) {
@@ -323,6 +326,12 @@ a {
       overflow: hidden;
     }
     .cell-type1-full {
+      @media screen and (max-width: $break-medlarge) {
+        width: 50%;
+      }
+      @media screen and (max-width: $break-medsmall) {
+        width: 100%;
+      }
       width: 33.33%;
       img {
         cursor: pointer;
@@ -331,6 +340,10 @@ a {
         border: 0;
       }
       .quote {
+        @media screen and (max-width: $break-medsmall) {
+          margin-top: 3%;
+          margin-bottom: 3%;
+        }
         font-size: 2em;
         display: table;
         vertical-align: middle;
@@ -371,6 +384,9 @@ a {
         font-size: 1em;
         @media screen and (max-width: $break-medlarge) {
           font-size: 1.2em;
+        }
+        @media screen and (max-width: $break-medium) {
+          font-size: 1em;
         }
       }
       h2 {
@@ -541,13 +557,24 @@ a {
 /****************************/
 
 /* ZOOM PIC */
+.loader {
+  position: relative;
+  top: -50%;
+  opacity: 0.3;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../images/loader.gif') no-repeat center center;
+  width: 70px;
+  height: 70px;
+  @media screen and (max-width: $break-medsmall) {
+    top: -300px;
+  }
+}
 #zoomimg {
   position: fixed;
   visibility: hidden;
   z-index: 10000;
-  padding: 30px;
-  top: 4%;
-  left: 5%;
+  top: 3%;
   @include opacity(0);
   @include transition-property(opacity, visibility);
   @include transition-duration(300ms);
@@ -558,6 +585,9 @@ a {
   }
   img {
     border: 2px solid #333;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 #filter {

@@ -74,6 +74,11 @@ angular.module('fruitsandvegApp')
       else
         $(".content-cell").css "height", "auto"
 
+      widthBlock = $(".cell-type1-full").width()
+      if $(window).width() > 624
+        $(".content-cell-full").height widthBlock
+      else
+        $(".content-cell-full").css "height", "auto"
 
     changeHeader = ->
       bodyElement = $("body")
