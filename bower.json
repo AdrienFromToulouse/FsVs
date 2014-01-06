@@ -13,6 +13,7 @@
     "fastclick": "latest",
     "angular-animate": "~1.2.6",
     "jquery.dotdotdot": "~1.6.10",
-    "spinjs": "~1.3.2"
+    "spinjs": "~1.3.2",
+    "modernizr": "~2.7.1"
   }
 }

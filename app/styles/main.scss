@@ -574,7 +574,7 @@ a {
   position: fixed;
   visibility: hidden;
   z-index: 10000;
-  top: 3%;
+  top: 2%;
   @include opacity(0);
   @include transition-property(opacity, visibility);
   @include transition-duration(300ms);

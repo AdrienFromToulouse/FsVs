@@ -18,7 +18,7 @@ angular.module('fruitsandvegApp')
         
         $image.appendTo(box)
         box.css('width', $(window).width() + 'px')
-        box.css('margin-top', '5%')
+        box.css('margin-top', '3%')
         box.css('margin-left', '0%')
         box.addClass 'visible'
         filter.addClass 'visible'
@@ -40,16 +40,30 @@ angular.module('fruitsandvegApp')
           ratioImg = @width / @height
 
           if ratioImg < 1
+            console.log "ratioImg < 1"
             if windowWidth < 640
+              console.log "windowWidth < 640"
               widthNew = windowWidth - 10
               heightNew = widthNew / ratioImg
             else
+              console.log "windowWidth > 640"
               heightNew = windowHeight - windowHeight / 10
               widthNew = ratioImg * heightNew
+              if heightNew > windowHeight
+                console.log "heightNew > windowHeight"
+                heightNew = windowHeight - windowHeight / 2
+                widthNew = ratioImg * heightNew
           else if ratioImg > 1
+            console.log "ratioImg > 1"
             widthNew = windowWidth - windowWidth / 10
             heightNew = widthNew / ratioImg
+            # the height computed is too big compare to the actual window height
+            if heightNew > windowHeight
+              console.log "heightNew > windowHeight"
+              heightNew = windowHeight - windowHeight / 5
+              widthNew = ratioImg * heightNew
           else
+            console.log "scare"
             widthNew = windowWidth - windowWidth / 10
             heightNew = widthNew
 
