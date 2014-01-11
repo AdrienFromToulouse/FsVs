@@ -76,6 +76,8 @@ angular.module('fruitsandvegApp')
         fullImg.src = "../images" + element.attr('data-imgsrc')
 
       $(document.body).click ->
+
+        filter = $('#filter')
         box = $('#zoomimg')
         if box.hasClass 'visible'
           box.removeClass 'visible'

@@ -36,6 +36,8 @@ $break-medsmall-small: 380px;
 /* $break-medsmall: 640px; */
 
 $break-1024: 1024px;
+$break-640: 640px;
+$break-440: 440px;
 
 $break-medium: 960px;
 $break-medlarge: 1137px;
@@ -347,6 +349,9 @@ a {
       @media screen and (max-width: $break-1024) {
         width: 50%;
       }
+      @media screen and (max-width: $break-640) {
+        width: 100%;
+      }
       width: 33.33%;
       img {
         cursor: pointer;
@@ -387,6 +392,9 @@ a {
       @media screen and (max-width: $break-1024) {
         width: 50%;
         margin: 0%;
+      }
+      @media screen and (max-width: $break-640) {
+        width: 100%;
       }
       width: 32.7%;
       img {
@@ -453,11 +461,37 @@ a {
         .album-cover {
           width: 30%;
           float: left;
-        }
-        .album-cover-detail {
+          @media screen and (max-width: $break-640) {
+            width: 44%;
+          }
         }
       }
-      section {
+      .album-cover-detail {
+        @media screen and (max-width: $break-640) {
+          display: block;
+          width: 90%;
+          margin: auto;
+          margin-top: 2%;
+        }
+      }
+      .album-hdr {
+        @media screen and (max-width: $break-1024) {
+          overflow: hidden;
+        }
+      }
+      .tracks-part1, .tracks-part2 {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 20px;
+        @media screen and (max-width: $break-1024) {
+          display: block;
+          margin-left: 30%;
+        }
+        @media screen and (max-width: $break-640) {
+          display: inline-block;
+          margin-left: 0;
+        }
         .track {
           font-family: akzidenz-grotesk-condensed, 'Arial Narrow', Impact, serif;
           font-weight: normal;
@@ -465,11 +499,33 @@ a {
           color: #808080;
           font-size: 1.5em;
         }
+      }
+      .tracks-part1 {
+        @media screen and (max-width: $break-1024) {
+          margin-top: -15%;
+        }
+        @media screen and (max-width: $break-640) {
+          margin-top: 0;
+        }
+      }
+      .emb-player {
         display: inline-block;
-        vertical-align: top;
-        width: 300px;
-        margin-right: 5%;
-        margin-bottom: 20px;
+        width: 380px;
+        @media screen and (max-width: $break-1024) {
+          display: block;
+          margin-left: 30%;
+        }
+        @media screen and (max-width: $break-640) {
+          margin-left: 0;
+        }
+        .widget_iframe {
+          @media screen and (max-width: $break-640) {
+            width: 90% !important;
+          }
+        }
+        @media screen and (max-width: $break-440) {
+          margin-left: 0;
+        }
       }
     }
     .listen {
@@ -564,6 +620,9 @@ a {
     margin-left:1px;
     @media screen and (max-width: $break-1024) {
       width: 50%;
+    }
+    @media screen and (max-width: $break-640) {
+      width: 100%;
     }
     &:first-child {margin-left:0;}
   }
