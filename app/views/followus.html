@@ -8,43 +8,16 @@
   </div>
   <div class="empty"></div>
   <div class="main" id="main">
-    <div class="listen">
-      <h2>LISTEN TO THIS</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-    </div>
+    <div ng-include="'views/_listen.html'"></div>
     <div class="content" ng-controller="FollowusCtrl">
       <!-- <img src="http://placehold.it/300x300/" alt="" /> -->
-      <div class="content-cell cell-type1">
+      <div class="content-cell cell-type2 darker">
         <h2>Cell 1</h2>
         <p>{{posts[0].message}}</p><p ng-if="posts[0].type == 'link'">{{posts[0].link}}</p>
-      </div>
-      <div class="content-cell cell-type1 light">
         <h2>Cell 2</h2>
         <p>{{posts[1].message}}</p><p ng-if="posts[1].type == 'link'">{{posts[1].link}}</p>
-      </div>
-      <div class="content-cell cell-type1 darker">
         <h2>Cell 3</h2>
         <p>{{posts[2].message}}</p><p ng-if="posts[2].type == 'link'">{{posts[2].link}}</p>
-      </div>
-      <div class="content-cell cell-type1">
-        <h2>Cell 4</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="content-cell cell-type2 darker">
-        <h2>Cell 5</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="content-cell cell-type1">
-        <h2>Cell 1</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="content-cell cell-type1 light">
-        <h2>Cell 2</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="content-cell cell-type1 darker">
-        <h2>Cell 3</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </div>
     </div>
   </div>
