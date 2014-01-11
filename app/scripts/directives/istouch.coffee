@@ -5,11 +5,15 @@ angular.module('fruitsandvegApp')
     restrict: "A"
     link: (scope, element, attrs) ->
       ua = navigator.userAgent
+      
       isTouchDevice = ua.match(/ipad|ipod|iphone/i)
       if isTouchDevice
-        $( "#global" ).toggleClass( "touch", true );
+        $( "#global" ).toggleClass( "touch", true )
       else
-        console.log "tt"
-        $( "#global" ).toggleClass( "touch", false );
+        $( "#global" ).toggleClass( "touch", false )
         $(".hdr-image-wrap").css("position", "fixed")
         $(".hdr-content").css("position", "fixed")
+
+      isMobile = /Android|BlackBerry|IEMobile|Opera Mini/
+      if isMobile is false
+        $( "html" ).addClass( "backgroundclip" )

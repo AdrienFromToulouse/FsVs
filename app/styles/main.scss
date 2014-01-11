@@ -97,15 +97,14 @@ body {
 }
 
 .backgroundclip .bgrd-txt-cardboard {
-  /* color: #ac9566;; */
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: url(../images/cardboard--full.jpg);
   @include background-clip(text);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
 }
 .bgrd-txt-cardboard {
-  color: #ac9566;;
+  color: #ac9566;
 }
 .bgrd-txt-paper {
   color: #ffffff;
@@ -120,15 +119,12 @@ body {
   color: #cd3a3d;
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
-  /* background: -webkit-linear-gradient(transparent, transparent), */
-  /* url(../images/red--full.jpg); */
   background: -webkit-linear-gradient(transparent, transparent),
   url(../images/violet-effect.png);
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
-.bgrd-txt-violet {
-  color: #cd3a3d;
+.backgroundclip .bgrd-txt-violet {
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent),
@@ -136,8 +132,10 @@ body {
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
-.bgrd-txt-green {
-  color: #cd3a3d;
+.bgrd-txt-violet {
+  color: #7833a6;
+}
+.backgroundclip .bgrd-txt-green {
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent),
@@ -145,8 +143,10 @@ body {
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
-.bgrd-txt-blue {
-  color: #cd3a3d;
+.bgrd-txt-green {
+  color: #a6e352;
+}
+.backgroundclip .bgrd-txt-blue {
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent),
@@ -154,7 +154,9 @@ body {
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
-
+.bgrd-txt-blue {
+  color: #31bdaa;
+}
 
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
