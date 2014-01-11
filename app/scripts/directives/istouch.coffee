@@ -12,3 +12,4 @@ angular.module('fruitsandvegApp')
         console.log "tt"
         $( "#global" ).toggleClass( "touch", false );
         $(".hdr-image-wrap").css("position", "fixed")
+        $(".hdr-content").css("position", "fixed")

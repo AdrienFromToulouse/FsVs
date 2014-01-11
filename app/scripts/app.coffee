@@ -12,8 +12,8 @@ angular.module('fruitsandvegApp',
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
-      .when '/program',
-        templateUrl: 'views/program.html'
+      .when '/followus',
+        templateUrl: 'views/followus.html'
         controller: 'MainCtrl'
       .when '/gallery',
         templateUrl: 'views/gallery.html'
