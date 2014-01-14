@@ -58,9 +58,9 @@ angular.module('fruitsandvegApp')
 
       $image = $(".hdr-image")
       if $image.data("align") is "left"
-        o.left = -Math.abs(windowWidth - o.width) / 3
+        # o.left = -Math.abs(windowWidth - o.width) / 3
       else
-        o.left = -Math.abs(windowWidth - o.width) / 1.4
+        # o.left = -Math.abs(windowWidth - o.width) / 1.4
         o.top = -Math.abs(slideHeight - o.height) / 2
         $(".hdr-image-wrap").css height: $(window).height() / 100 * 90
         $(".empty").css height: $(window).height() / 100 * 90

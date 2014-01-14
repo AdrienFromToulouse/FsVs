@@ -26,7 +26,7 @@ angular.module('fruitsandvegApp')
       element.click (event) ->
         event.preventDefault()
         event.stopPropagation()
-
+        ga( 'send', 'event', 'picture', 'click', 'image', element.attr('data-imgsrc') )
         # $(element).after("<p class='loader'></p>")
 
         fullImg = new Image()

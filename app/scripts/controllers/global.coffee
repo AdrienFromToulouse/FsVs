@@ -31,3 +31,6 @@ angular.module('fruitsandvegApp')
         "active"
       else
         ""
+
+    $scope.sendAnalytics = (sns) ->
+       ga('send', 'event', 'button', 'click', 'share-btn', sns);
