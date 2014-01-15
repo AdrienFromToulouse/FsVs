@@ -3,8 +3,7 @@
 angular.module('fruitsandvegApp')
   .controller 'GlobalCtrl', ($scope, $location, $anchorScroll, $timeout) ->
 
-    console.log "GLOBQL-ctrl"
-
+    
     scrollReset = ->
                 
       $targetBlock = $(".main")

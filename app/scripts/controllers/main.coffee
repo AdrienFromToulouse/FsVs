@@ -113,4 +113,15 @@ angular.module('fruitsandvegApp')
     $(window).resize ->
       setHeight()
 
-    
+    if navigator.userAgent.toLowerCase().indexOf("firefox") > -1
+      $( "html" ).removeClass( "backgroundclip" )
+      # $( "html" ).addClass( "no-backgroundclip" )
+
+
+    oldIE = undefined
+    oldIE = true  if $("html").is(".no-backgroundclip")
+    if oldIE
+      $( "html" ).removeClass( "backgroundclip" )
+      console.log "IE"
+    else
+      console.log "NOTIE"

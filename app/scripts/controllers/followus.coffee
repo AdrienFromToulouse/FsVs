@@ -1,5 +1,6 @@
 'use strict'
 
+
 angular.module('fruitsandvegApp')
   .controller 'FollowusCtrl', ($scope, $http, $timeout) ->
 
