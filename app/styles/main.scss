@@ -98,10 +98,12 @@ body {
 }
 
 .backgroundclip .bgrd-txt-cardboard {
+  color: #ac9566;
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
-  background: url(../images/cardboard--full.jpg);
-  @include background-clip(text);
+  background: -o-linear-gradient(transparent, transparent);
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(../images/cardboard--full.jpg) repeat;
   -webkit-background-clip: text;
 }
 .bgrd-txt-cardboard {
@@ -126,6 +128,7 @@ body {
   -webkit-background-clip: text;
 }
 .backgroundclip .bgrd-txt-violet {
+  color: #7833a6;
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent),
@@ -137,6 +140,7 @@ body {
   color: #7833a6;
 }
 .backgroundclip .bgrd-txt-green {
+  color: #a6e352;
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent),
@@ -148,6 +152,7 @@ body {
   color: #a6e352;
 }
 .backgroundclip .bgrd-txt-blue {
+  color: #31bdaa;
   letter-spacing: normal;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent),
