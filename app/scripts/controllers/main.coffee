@@ -118,10 +118,10 @@ angular.module('fruitsandvegApp')
       # $( "html" ).addClass( "no-backgroundclip" )
 
 
-    oldIE = undefined
-    oldIE = true  if $("html").is(".no-backgroundclip")
-    if oldIE
-      $( "html" ).removeClass( "backgroundclip" )
-      console.log "IE"
-    else
-      console.log "NOTIE"
+    # oldIE = undefined
+    # oldIE = true  if $("html").is(".no-backgroundclip")
+    # if oldIE
+    #   $( "html" ).removeClass( "backgroundclip" )
+    #   console.log "IE"
+    # else
+    #   console.log "NOTIE"
