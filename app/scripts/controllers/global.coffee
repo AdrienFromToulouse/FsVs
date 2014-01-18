@@ -16,15 +16,13 @@ angular.module('fruitsandvegApp')
     $scope.$on "$routeChangeSuccess", ->
       $timeout(scrollReset, 700)
 
-    $scope.$on "$locationChangeStart", (event, newUrl, currentUrl) ->
-      console.log newUrl
-      switch newUrl
-        when "http://fruitsveggies.ntdotme.com/#/"
-          (new Image()).src = 'images/cover.jpg'
-        when "http://fruitsveggies.ntdotme.com/#/program"
-          (new Image()).src = 'images/cover-prog.jpg'
-        else
-        
+    # $scope.$on "$locationChangeStart", (event, newUrl, currentUrl) ->
+    #   console.log newUrl
+
+
+    (new Image()).src = 'images/cover.jpg'
+    (new Image()).src = 'images/cover-prog.jpg'
+
     $scope.getClass = (path) ->
       if $location.path() is path
         "active"

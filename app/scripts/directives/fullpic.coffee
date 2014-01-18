@@ -27,7 +27,8 @@ angular.module('fruitsandvegApp')
         event.preventDefault()
         event.stopPropagation()
         ga( 'send', 'event', 'picture', 'click', 'image', element.attr('data-imgsrc') )
-        # $(element).after("<p class='loader'></p>")
+    
+            # $(element).after("<p class='loader'></p>")
 
         fullImg = new Image()
         fullImg.onload = ->
@@ -40,30 +41,23 @@ angular.module('fruitsandvegApp')
           ratioImg = @width / @height
 
           if ratioImg < 1
-            console.log "ratioImg < 1"
             if windowWidth < 640
-              console.log "windowWidth < 640"
               widthNew = windowWidth - 10
               heightNew = widthNew / ratioImg
             else
-              console.log "windowWidth > 640"
               heightNew = windowHeight - windowHeight / 10
               widthNew = ratioImg * heightNew
               if heightNew > windowHeight
-                console.log "heightNew > windowHeight"
                 heightNew = windowHeight - windowHeight / 2
                 widthNew = ratioImg * heightNew
           else if ratioImg > 1
-            console.log "ratioImg > 1"
             widthNew = windowWidth - windowWidth / 10
             heightNew = widthNew / ratioImg
             # the height computed is too big compare to the actual window height
             if heightNew > windowHeight
-              console.log "heightNew > windowHeight"
               heightNew = windowHeight - windowHeight / 5
               widthNew = ratioImg * heightNew
           else
-            console.log "scare"
             widthNew = windowWidth - windowWidth / 10
             heightNew = widthNew
 
@@ -72,6 +66,7 @@ angular.module('fruitsandvegApp')
             height: heightNew
 
           createBox (oImg)
+
           
         fullImg.src = "../images" + element.attr('data-imgsrc')
 
