@@ -23,16 +23,11 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/noise.css">
         <!-- endbuild -->
+   
+
+
 </head>
-  <body ng-app="fruitsandvegApp">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=368756579927759";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  <body ng-app="fruitsandvegApp" class="waiting">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -42,10 +37,11 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
+
     <!-- Add your site or application content here -->
     <div id="global" class="global" ng-controller="GlobalCtrl">
       <div ng-include="'views/_header.html'"></div>
-      <div class="container reveal-animation" ng-view="" istouch ></div>
+      <div class="container reveal-animation" ng-view="" istouch></div>
       <!-- <div ng-include="'views/_footer.html'"></div> -->
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -74,9 +70,19 @@
         <script src="scripts/controllers/global.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/followus.js"></script>
+        <script src="scripts/directives/facebook.js"></script>
         <script src="scripts/directives/headerMenuBar.js"></script>
         <script src="scripts/directives/fullpic.js"></script>
         <script src="scripts/directives/istouch.js"></script>
         <!-- endbuild -->
+        <div id="fb-root"></div>
+
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=368756579927759";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

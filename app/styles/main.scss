@@ -48,6 +48,11 @@ body {
   background: #1a1a1a; 
 }
 
+.waiting {
+
+  background: #4F4F4F;
+}
+
 
 .icon {
   @media screen and (max-width: $break-medsmall-small) {
@@ -580,9 +585,10 @@ a {
         top: 25px;
         left: -47px;
       }
-      .fb-like {
-        /* float: right; */
-        /* margin-left: 100px; */
+      .likers {
+        float: right;
+        margin-right: -8%;
+        /* width: 320px; */
       }
     }
   }

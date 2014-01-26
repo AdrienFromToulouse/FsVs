@@ -1,0 +1,25 @@
+Former Secretary of State Hillary Clinton has noted, “Wildlife trafficking has serious implications for the security and prosperity of people around the world.” And Congressman Ed Royce (R-CA) has issued a call to action for Congress to halt the atrocities. “The black market for wildlife is now in the league of drug smuggling," he said at a recent meeting.
+
+
+  -webkit-mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+  -moz-mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+
+
+
+-webkit-text-fill-color: transparent;
+ background: -webkit-linear-gradient(transparent, transparent),
+             url(path/to/bg/image) repeat;
+ background: -o-linear-gradient(transparent, transparent);
+ -webkit-background-clip: text;
+
+
+
+@-moz-keyframes noise{0%,100%{-moz-transform:translate(0, 0);transform:translate(0, 0)}10%{-moz-transform:translate(-5%, -10%);transform:translate(-5%, -10%)}20%{-moz-transform:translate(-15%, 5%);transform:translate(-15%, 5%)}30%{-moz-transform:translate(7%, -25%);transform:translate(7%, -25%)}40%{-moz-transform:translate(21%, 25%);transform:translate(21%, 25%)}50%{-moz-transform:translate(-25%, 10%);transform:translate(-25%, 10%)}60%{-moz-transform:translate(15%, 0%);transform:translate(15%, 0%)}70%{-moz-transform:translate(0%, 15%);transform:translate(0%, 15%)}80%{-moz-transform:translate(25%, 35%);transform:translate(25%, 35%)}90%{-moz-transform:translate(-10%, 10%);transform:translate(-10%, 10%)}}@-webkit-keyframes noise{0%,100%{-webkit-transform:translate(0, 0);transform:translate(0, 0)}10%{-webkit-transform:translate(-5%, -10%);transform:translate(-5%, -10%)}20%{-webkit-transform:translate(-15%, 5%);transform:translate(-15%, 5%)}30%{-webkit-transform:translate(7%, -25%);transform:translate(7%, -25%)}40%{-webkit-transform:translate(21%, 25%);transform:translate(21%, 25%)}50%{-webkit-transform:translate(-25%, 10%);transform:translate(-25%, 10%)}60%{-webkit-transform:translate(15%, 0%);transform:translate(15%, 0%)}70%{-webkit-transform:translate(0%, 15%);transform:translate(0%, 15%)}80%{-webkit-transform:translate(25%, 35%);transform:translate(25%, 35%)}90%{-webkit-transform:translate(-10%, 10%);transform:translate(-10%, 10%)}}@-o-keyframes noise{0%,100%{-o-transform:translate(0, 0);transform:translate(0, 0)}10%{-o-transform:translate(-5%, -10%);transform:translate(-5%, -10%)}20%{-o-transform:translate(-15%, 5%);transform:translate(-15%, 5%)}30%{-o-transform:translate(7%, -25%);transform:translate(7%, -25%)}40%{-o-transform:translate(21%, 25%);transform:translate(21%, 25%)}50%{-o-transform:translate(-25%, 10%);transform:translate(-25%, 10%)}60%{-o-transform:translate(15%, 0%);transform:translate(15%, 0%)}70%{-o-transform:translate(0%, 15%);transform:translate(0%, 15%)}80%{-o-transform:translate(25%, 35%);transform:translate(25%, 35%)}90%{-o-transform:translate(-10%, 10%);transform:translate(-10%, 10%)}}@-ms-keyframes noise{0%,100%{-ms-transform:translate(0, 0);transform:translate(0, 0)}10%{-ms-transform:translate(-5%, -10%);transform:translate(-5%, -10%)}20%{-ms-transform:translate(-15%, 5%);transform:translate(-15%, 5%)}30%{-ms-transform:translate(7%, -25%);transform:translate(7%, -25%)}40%{-ms-transform:translate(21%, 25%);transform:translate(21%, 25%)}50%{-ms-transform:translate(-25%, 10%);transform:translate(-25%, 10%)}60%{-ms-transform:translate(15%, 0%);transform:translate(15%, 0%)}70%{-ms-transform:translate(0%, 15%);transform:translate(0%, 15%)}80%{-ms-transform:translate(25%, 35%);transform:translate(25%, 35%)}90%{-ms-transform:translate(-10%, 10%);transform:translate(-10%, 10%)}}@keyframes noise{0%,100%{transform:translate(0, 0)}10%{transform:translate(-5%, -10%)}20%{transform:translate(-15%, 5%)}30%{transform:translate(7%, -25%)}40%{transform:translate(21%, 25%)}50%{transform:translate(-25%, 10%)}60%{transform:translate(15%, 0%)}70%{transform:translate(0%, 15%)}80%{transform:translate(25%, 35%)}90%{transform:translate(-10%, 10%)}
+
+
+
+
+{-webkit-animation:noise 5s 0s steps(5) infinite;-moz-animation:noise 5s 0s steps(5) infinite;-ms-animation:noise 5s 0s steps(5) infinite;-o-animation:noise 5s 0s steps(5) infinite;animation:noise 5s 0s steps(5) infinite;background:url('../images/misc/noise--full.png?1386173938')
+
+
+content:"";display:block;height:300%;left:-100%;position:absolute;top:-100%;width:300%;z-index:2
