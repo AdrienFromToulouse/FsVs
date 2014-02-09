@@ -306,7 +306,7 @@ a {
     overflow: hidden;
     z-index: 0;
     @include single-transition (left, .7s, ease);
-    #poster {
+    .poster {
       display: none;
     }
     .hdr-image {
@@ -325,11 +325,22 @@ a {
         font-size: 5em;
       }
     }
+    .gallery-cover-bis {
+      display: none;
+    }
+    @media screen and (max-width: $break-medlarge) {
+      .gallery-cover-bis {
+        display: block;
+      }
+      .gallery-cover-origin {
+        display: none;
+      }
+    }
     @media screen and (max-width: $break-1024) {
       .video {
         display: none;
       }
-      #poster {
+      .poster {
         display: block;
       }
     }

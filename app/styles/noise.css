@@ -178,3 +178,9 @@
   width: 300%;
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .hdr-image-wrap:after {
+    width: 100% !important;
+  }
+}
