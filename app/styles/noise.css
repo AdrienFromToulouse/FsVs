@@ -181,6 +181,6 @@
 
 @media screen and (max-width: 768px) {
   .hdr-image-wrap:after {
-    width: 100% !important;
+    width: 0px !important;
   }
 }
